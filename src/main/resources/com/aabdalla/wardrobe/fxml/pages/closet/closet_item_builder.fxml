@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="1003.0" styleClass="base_background" stylesheets="@../../../css/base.css, @../../../css/pages/closet/closet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="156.0">
+            <children>
+                <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="54.0" prefWidth="99.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                    <children>
+                        <FontIcon iconLiteral="fas-angle-left" iconSize="30" layoutX="16.0" layoutY="38.0" opacity="0.44" />
+                        <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="42.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/logo_icon.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="tags_container" layoutX="21.0" layoutY="73.0" prefHeight="197.0" prefWidth="121.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="73.0">
+                    <children>
+                        <FontIcon iconColor="#7d8296ab" iconLiteral="fas-grip-horizontal" iconSize="15" layoutX="11.0" layoutY="22.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="11.0" />
+                        <Text id="tags_title" layoutX="33.0" layoutY="22.94921875" opacity="0.57" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="10.0" />
+                        <AnchorPane layoutX="11.0" layoutY="36.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+                            <children>
+                                <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHIRTS" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="11.0" layoutY="66.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+                            <children>
+                                <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUTER WEAR" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="11.0" layoutY="96.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+                            <children>
+                                <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOTTOMS" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="11.0" layoutY="126.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+                            <children>
+                                <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOES" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="11.0" layoutY="156.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+                            <children>
+                                <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCESORIES" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane id="save_button" layoutX="24.0" layoutY="530.0" prefHeight="40.0" prefWidth="107.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="24.0">
+                    <children>
+                        <Text layoutX="34.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="600.0" prefWidth="851.0" HBox.hgrow="ALWAYS">
+            <children>
+                <Text id="page_title" layoutX="7.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add an Item" />
+                <Line endX="178.33331298828125" layoutX="111.0" layoutY="59.0" opacity="0.09" startX="-100.0" strokeWidth="3.0" />
+                <AnchorPane id="tags_container" layoutX="4.0" layoutY="73.0" prefHeight="32.0" prefWidth="825.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="20.0">
+                    <children>
+                        <FontIcon iconColor="#7d8296ab" iconLiteral="fas-tag" iconSize="15" layoutX="11.0" layoutY="22.0" AnchorPane.leftAnchor="11.0" />
+                        <Text id="tags_title" layoutX="34.0" layoutY="21.0" opacity="0.57" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" AnchorPane.leftAnchor="34.0" />
+                        <FontIcon iconColor="#7d8296" iconLiteral="fas-plus" iconSize="13" layoutX="694.0" layoutY="21.0" AnchorPane.rightAnchor="11.0" />
+                        <HBox layoutX="83.0" layoutY="6.0" prefHeight="21.0" prefWidth="603.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="34.0" />
+                    </children>
+                </AnchorPane>
+                <TilePane id="image_selector" hgap="15.0" layoutX="4.0" layoutY="130.0" prefHeight="440.0" prefTileHeight="200.0" prefTileWidth="200.0" prefWidth="708.0" vgap="15.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="130.0">
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                    </children>
+                </TilePane>
+                <Text id="tags_title" layoutX="5.0" layoutY="122.0" opacity="0.28" strokeType="OUTSIDE" strokeWidth="0.0" text="IMAGES" />
+                <Text id="add_exception" fill="#ff386d" layoutX="5.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                <AnchorPane layoutX="735.0" layoutY="130.0" prefHeight="80.0" prefWidth="80.0" styleClass="add_image_button" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="130.0">
+                    <children>
+                        <FontIcon id="add_image_button" iconColor="#9daabc" iconLiteral="fas-plus" iconSize="50" layoutX="18.0" layoutY="58.0" opacity="0.28" stroke="WHITE" strokeType="INSIDE" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

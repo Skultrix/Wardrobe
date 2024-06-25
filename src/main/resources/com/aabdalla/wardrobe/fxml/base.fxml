@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<BorderPane fx:id="mainLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="base_background" stylesheets="@../css/base.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aabdalla.wardrobe.controllers.BaseUI">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo_full.png" />
+               </image>
+            </ImageView>
+            <Text fill="#4b5154" strokeType="OUTSIDE" strokeWidth="0.0" text="v1.0">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Text id="page_title" fx:id="pageTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Page Title" />
+                  <Line endX="178.33331298828125" opacity="0.09" startX="-100.0" strokeWidth="3.0" />
+               </children>
+               <HBox.margin>
+                  <Insets left="65.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="546.0" prefWidth="250.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="navHome" prefHeight="60.0" prefWidth="213.0" styleClass="nav_button">
+               <children>
+                  <Text layoutX="49.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-home" iconSize="18" layoutX="15.0" layoutY="35.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="navCloset" prefHeight="131.0" prefWidth="213.0" styleClass="nav_button">
+               <children>
+                  <Text layoutX="51.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Closet" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-door-open" iconSize="16" layoutX="16.0" layoutY="31.0" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-plus" iconSize="13" layoutX="29.0" layoutY="64.0" />
+                  <Text fx:id="navClosetAddPiece" layoutX="53.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="additional_opt" text="Add a piece" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-plus" iconSize="13" layoutX="29.0" layoutY="97.0" />
+                  <Text fx:id="navClosetAddTag" layoutX="53.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="additional_opt" text="Create a tag" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="navOutfits" prefHeight="131.0" prefWidth="213.0" styleClass="nav_button">
+               <children>
+                  <Text layoutX="51.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Outfits" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-tshirt" iconSize="16" layoutX="16.0" layoutY="31.0" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-plus" iconSize="13" layoutX="29.0" layoutY="64.0" />
+                  <Text fx:id="navOutfitsAddOutfit" layoutX="53.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="additional_opt" text="Make an outfit" />
+                  <FontIcon iconColor="#464b61" iconLiteral="fas-plus" iconSize="13" layoutX="29.0" layoutY="97.0" />
+                  <Text fx:id="navOutfitsAddGroup" layoutX="53.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="additional_opt" text="Create a group" />
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </left>
+
+</BorderPane>

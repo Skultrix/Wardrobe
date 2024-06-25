@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../css/pages/closet/closet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane id="tags_container" prefHeight="32.0" prefWidth="718.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontIcon iconColor="#7d8296ab" iconLiteral="fas-tag" iconSize="15" layoutX="11.0" layoutY="22.0" AnchorPane.leftAnchor="11.0" />
+            <Text id="tags_title" layoutX="34.0" layoutY="21.0" opacity="0.57" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags" AnchorPane.leftAnchor="34.0" />
+            <FontIcon fx:id="createTag" iconColor="#7d8296" iconLiteral="fas-plus" iconSize="13" layoutX="694.0" layoutY="21.0" AnchorPane.rightAnchor="11.0" />
+            <HBox fx:id="tagsList" layoutX="83.0" layoutY="6.0" prefHeight="21.0" prefWidth="603.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="34.0">
+               <children>
+                  <AnchorPane fx:id="tagAll" prefHeight="25.0" prefWidth="40.0" styleClass="tag_button">
+                     <children>
+                        <Text layoutX="10.0" layoutY="15.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALL" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" right="10.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane id="tags_container" maxHeight="197.0" maxWidth="121.0" prefHeight="197.0" prefWidth="121.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <FontIcon iconColor="#7d8296ab" iconLiteral="fas-grip-horizontal" iconSize="15" layoutX="11.0" layoutY="22.0" AnchorPane.leftAnchor="11.0" AnchorPane.topAnchor="11.0" />
+            <Text id="tags_title" layoutX="33.0" layoutY="22.94921875" opacity="0.57" strokeType="OUTSIDE" strokeWidth="0.0" text="Types" AnchorPane.leftAnchor="33.0" AnchorPane.topAnchor="10.0" />
+            <AnchorPane fx:id="sortShirts" layoutX="11.0" layoutY="36.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0">
+               <children>
+                  <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHIRTS" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="11.0" layoutY="66.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+               <children>
+                  <Text fx:id="sortOuterWear" layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUTER WEAR" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="11.0" layoutY="96.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+               <children>
+                  <Text fx:id="sortBottoms" layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOTTOMS" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sortShoes" layoutX="11.0" layoutY="126.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+               <children>
+                  <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHOES" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sortAccessories" layoutX="11.0" layoutY="156.0" prefHeight="25.0" prefWidth="100.0" styleClass="type_button">
+               <children>
+                  <Text layoutX="10.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCESSORIES" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.29296875" />
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </right>
+   <center>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../css/common/scroll-bar.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <content>
+            <TilePane fx:id="itemsContainer" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

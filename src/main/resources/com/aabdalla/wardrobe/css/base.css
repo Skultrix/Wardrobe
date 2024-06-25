@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+
+.base_background {
+    -fx-background-color: #f0f5ff;
+}
+
+#page_title {
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-size: 30px;
+    -fx-font-weight: 900;
+    -fx-fill: #343645;
+}
+
+/* NAVIGATION */
+
+.nav_button {
+    -fx-background-color: linear-gradient(to left top, #ffffff, #eaf4f6);
+    -fx-background-radius: 7;
+
+    -fx-border-radius: 7;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 5px;
+
+    -fx-effect: dropshadow(gaussian, rgba(157, 141, 195, 0.16), 30, 0, 10,10);
+}
+
+.nav_button:hover {
+    -fx-background-color: linear-gradient(to right bottom, #ffffff, #eaf4f6);
+}
+
+.nav_button Text {
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-size: 16px;
+    -fx-font-weight: 900;
+    -fx-fill: #333647;
+    -fx-transition: -fx-background-color 0.5s ease;
+}
+
+#selected_nav {
+    -fx-background-color: linear-gradient(to left top, #fffefd, #fffefd, rgba(114, 255, 180, 0.37));
+}
+
+.additional_opt {
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-fill: #404355;
+}

@@ -1,0 +1,32 @@
+ScrollPane {
+    -fx-background-color: transparent;
+}
+
+ScrollPane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .scroll-bar:vertical .thumb {
+    -fx-background-color: #dfe5f1; /* Change to your desired color */
+}
+
+.scroll-pane > .scroll-bar:vertical .track {
+    -fx-background-color: transparent; /* Change to your desired color */
+}
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #9ca3b3; /* Change to your desired color */
+}
+
+.scroll-bar .track
+{
+    -fx-stroke-width: 1;
+    -fx-stroke: -c-dark-glass;
+    -fx-arc-width: 16px;
+    -fx-arc-height: 16px;
+    -fx-background-color: transparent;
+}

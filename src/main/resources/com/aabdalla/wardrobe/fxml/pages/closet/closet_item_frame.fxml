@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="clothes_container" stylesheets="@../../../css/pages/closet/closet.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FontIcon iconColor="#7d8296ab" iconLiteral="fas-heart" iconSize="25" layoutX="14.0" layoutY="36.0" opacity="0.46" stroke="WHITE" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,110 @@
+
+
+#tags_container {
+    -fx-background-color: #dfe5f1;
+
+    -fx-background-radius: 5;
+}
+
+#tags_title {
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-size: 12px;
+    -fx-font-weight: 900;
+    -fx-fill: rgba(51, 54, 71, 0.8);
+}
+
+.tag_button {
+    -fx-background-color: #f0f5ff;
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-size: 12px;
+    -fx-font-weight: 900;
+    -fx-background-radius: 10;
+}
+
+.type_button {
+    -fx-background-color: #f0f5ff;
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-weight: 800;
+    -fx-font-size: 12px;
+    -fx-background-radius: 5;
+}
+
+.tag_button Text {
+    -fx-alignment: center;
+    -fx-fill: rgba(72, 75, 96, 0.8);
+}
+
+.type_button Text {
+    -fx-alignment: center;
+    -fx-fill: rgba(96, 99, 122, 0.8);
+}
+
+
+
+.clothes_container {
+
+    -fx-border-width: 2px;
+    -fx-border-color: linear-gradient(to right bottom, #ffffff, #eaeef3, #ebedf4);
+    -fx-border-radius: 20px;
+
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-image: url("../../../img/item_background.png");
+    -fx-effect: dropshadow(gaussian, rgba(157, 141, 195, 0.37), 30, 0, 10,10);
+
+}
+.clothes_container:hover {
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(157, 141, 195, 0.47), 30, 0, 13,13);
+    -fx-border-color: linear-gradient(to right bottom, #ffffff, #eaeef3, #ffffff);
+
+}
+
+#image_selector {
+    -fx-border-color: #dfe5f1;
+    -fx-border-width: 5px;
+    -fx-border-style: dashed;
+}
+
+#add_image_button {
+
+}
+
+#save_button {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-background-color: #88d19a;
+    -fx-effect: dropshadow(gaussian, rgba(157, 141, 195, 0.22), 0, 0, 4,4);
+}
+
+#save_button Text {
+    -fx-fill: #f9fae8;
+    -fx-font-family: "Poppins", monospace;
+    -fx-font-weight: 900;
+    -fx-font-size: 16px;
+}
+
+#exception_text {
+
+}
+
+.add_image_button {
+    -fx-border-width: 1px;
+    -fx-border-color: linear-gradient(to right bottom, #ffffff, #eaeef3, #ffffff);
+    -fx-border-radius: 7px;
+
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-image: url("../../../img/item_background.png");
+    -fx-effect: dropshadow(gaussian, rgba(157, 141, 195, 0.37), 30, 0, 10,10);
+}
+
+

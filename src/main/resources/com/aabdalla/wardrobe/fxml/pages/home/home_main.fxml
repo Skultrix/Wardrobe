@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox fillHeight="false" prefHeight="100.0" prefWidth="200.0" spacing="30.0" stylesheets="@../../../css/pages/home/home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="info_container">
+         <children>
+            <Text layoutX="84.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info_title" text="# OUTFITS" />
+            <Text layoutX="26.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info_count" text="00" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="info_container">
+         <children>
+            <Text layoutX="99.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info_title" text="# PIECES" />
+            <Text layoutX="26.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="info_count" text="00" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
